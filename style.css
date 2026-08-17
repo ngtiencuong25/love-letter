@@ -1,13 +1,12 @@
 /* =========================================================
-   LOVE LETTER — STYLE.CSS
-   Font tối ưu tiếng Việt / PC / Mobile
+   LOVE LETTER
+   SYSTEM FONT VERSION
+   Windows / Android / iPhone / PC / Mobile
 ========================================================= */
 
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
-
-/* =========================================================
+/* =========================
    RESET
-========================================================= */
+========================= */
 
 * {
     margin: 0;
@@ -24,10 +23,15 @@ body {
     overflow-x: hidden;
 
     font-family:
-        "Be Vietnam Pro",
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
         "Segoe UI",
+        Roboto,
         Arial,
         sans-serif;
+
+    color: #ffffff;
 
     background:
         radial-gradient(
@@ -37,17 +41,16 @@ body {
             #090611 100%
         );
 
-    color: #ffffff;
-
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
     text-rendering: optimizeLegibility;
 }
 
-/* =========================================================
+
+/* =========================
    BACKGROUND GLOW
-========================================================= */
+========================= */
 
 .background-glow {
     position: fixed;
@@ -80,9 +83,10 @@ body {
     bottom: -150px;
 }
 
-/* =========================================================
+
+/* =========================
    STARS
-========================================================= */
+========================= */
 
 #stars {
     position: fixed;
@@ -124,9 +128,10 @@ body {
     }
 }
 
-/* =========================================================
+
+/* =========================
    FLOATING HEARTS
-========================================================= */
+========================= */
 
 #hearts {
     position: fixed;
@@ -182,9 +187,10 @@ body {
     }
 }
 
-/* =========================================================
-   MAIN CONTAINER
-========================================================= */
+
+/* =========================
+   CONTAINER
+========================= */
 
 .container {
     position: relative;
@@ -194,9 +200,10 @@ body {
     width: 100%;
 }
 
-/* =========================================================
+
+/* =========================
    SCREEN
-========================================================= */
+========================= */
 
 .screen {
     min-height: 100vh;
@@ -220,18 +227,23 @@ body {
 
     from {
         opacity: 0;
-        transform: translateY(25px);
+
+        transform:
+            translateY(25px);
     }
 
     to {
         opacity: 1;
-        transform: translateY(0);
+
+        transform:
+            translateY(0);
     }
 }
 
-/* =========================================================
+
+/* =========================
    INTRO
-========================================================= */
+========================= */
 
 .intro-content {
     width: min(700px, 100%);
@@ -275,7 +287,8 @@ body {
 }
 
 h1 {
-    font-size: clamp(38px, 8vw, 70px);
+    font-size:
+        clamp(38px, 8vw, 70px);
 
     font-weight: 700;
 
@@ -294,6 +307,7 @@ h1 span {
         );
 
     -webkit-background-clip: text;
+
     background-clip: text;
 
     color: transparent;
@@ -309,15 +323,17 @@ h1 span {
     margin-bottom: 40px;
 }
 
-/* =========================================================
+
+/* =========================
    ENVELOPE
-========================================================= */
+========================= */
 
 .envelope-container {
     width: 260px;
     height: 200px;
 
-    margin: 0 auto 40px;
+    margin:
+        0 auto 40px;
 
     perspective: 1000px;
 }
@@ -332,7 +348,8 @@ h1 span {
 
     filter:
         drop-shadow(
-            0 20px 35px rgba(0, 0, 0, 0.45)
+            0 20px 35px
+            rgba(0, 0, 0, 0.45)
         );
 
     transition:
@@ -480,7 +497,7 @@ h1 span {
     align-items: center;
     justify-content: center;
 
-    color: white;
+    color: #ffffff;
 
     font-size: 24px;
 
@@ -491,14 +508,16 @@ h1 span {
     z-index: 6;
 }
 
-/* =========================================================
+
+/* =========================
    BUTTON
-========================================================= */
+========================= */
 
 .main-button {
     border: none;
 
-    padding: 15px 30px;
+    padding:
+        15px 30px;
 
     border-radius: 999px;
 
@@ -509,11 +528,14 @@ h1 span {
             #c847ff
         );
 
-    color: white;
+    color: #ffffff;
 
     font-family:
-        "Be Vietnam Pro",
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
         "Segoe UI",
+        Roboto,
         Arial,
         sans-serif;
 
@@ -560,9 +582,10 @@ h1 span {
     font-size: 13px;
 }
 
-/* =========================================================
+
+/* =========================
    MUSIC BUTTON
-========================================================= */
+========================= */
 
 .music-button {
     position: fixed;
@@ -584,7 +607,7 @@ h1 span {
 
     backdrop-filter: blur(10px);
 
-    color: white;
+    color: #ffffff;
 
     cursor: pointer;
 
@@ -595,15 +618,18 @@ h1 span {
 }
 
 .music-button:hover {
-    transform: scale(1.1);
+    transform:
+        scale(1.1);
 }
 
-/* =========================================================
+
+/* =========================
    LETTER
-========================================================= */
+========================= */
 
 .letter-wrapper {
-    width: min(820px, 100%);
+    width:
+        min(820px, 100%);
 }
 
 .letter-card {
@@ -647,9 +673,10 @@ h1 span {
     pointer-events: none;
 }
 
-/* =========================================================
-   DECORATION
-========================================================= */
+
+/* =========================
+   LETTER DECORATION
+========================= */
 
 .letter-decoration {
     position: absolute;
@@ -671,9 +698,10 @@ h1 span {
     right: 30px;
 }
 
-/* =========================================================
+
+/* =========================
    LETTER HEADER
-========================================================= */
+========================= */
 
 .letter-header {
     text-align: center;
@@ -705,9 +733,11 @@ h1 span {
 
 .letter-header h2 {
     font-family:
-        "Playfair Display",
-        "Be Vietnam Pro",
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
         "Segoe UI",
+        Roboto,
         Arial,
         sans-serif;
 
@@ -721,9 +751,10 @@ h1 span {
     color: #7b3159;
 }
 
-/* =========================================================
+
+/* =========================
    DIVIDER
-========================================================= */
+========================= */
 
 .divider {
     display: flex;
@@ -732,7 +763,8 @@ h1 span {
 
     gap: 15px;
 
-    margin: 30px 0;
+    margin:
+        30px 0;
 
     color: #db6c9d;
 
@@ -756,9 +788,10 @@ h1 span {
         );
 }
 
-/* =========================================================
+
+/* =========================
    LETTER CONTENT
-========================================================= */
+========================= */
 
 .letter-content {
     position: relative;
@@ -766,8 +799,11 @@ h1 span {
     z-index: 2;
 
     font-family:
-        "Be Vietnam Pro",
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
         "Segoe UI",
+        Roboto,
         Arial,
         sans-serif;
 
@@ -805,9 +841,10 @@ h1 span {
         28px 0;
 }
 
-/* =========================================================
+
+/* =========================
    SIGNATURE
-========================================================= */
+========================= */
 
 .signature {
     margin-top: 30px;
@@ -823,9 +860,10 @@ h1 span {
     font-size: 18px;
 }
 
-/* =========================================================
+
+/* =========================
    WISH BOX
-========================================================= */
+========================= */
 
 .wish-box {
     margin-top: 25px;
@@ -860,9 +898,10 @@ h1 span {
     margin: 0;
 }
 
-/* =========================================================
-   LETTER FOOTER
-========================================================= */
+
+/* =========================
+   FOOTER
+========================= */
 
 .letter-footer {
     text-align: center;
@@ -876,14 +915,16 @@ h1 span {
     line-height: 1.8;
 }
 
-/* =========================================================
+
+/* =========================
    END SCREEN
-========================================================= */
+========================= */
 
 .end-content {
     text-align: center;
 
-    width: min(650px, 100%);
+    width:
+        min(650px, 100%);
 }
 
 .end-heart {
@@ -916,9 +957,27 @@ h1 span {
         10px 0;
 }
 
-/* =========================================================
+
+/* =========================
+   BUTTON / ACCESSIBILITY
+========================= */
+
+button {
+    -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible {
+    outline:
+        3px solid
+        rgba(255, 143, 197, 0.7);
+
+    outline-offset: 4px;
+}
+
+
+/* =========================
    MOBILE
-========================================================= */
+========================= */
 
 @media (max-width: 700px) {
 
@@ -1006,7 +1065,8 @@ h1 span {
     }
 
     .wish-box {
-        padding: 20px 16px;
+        padding:
+            20px 16px;
 
         font-size: 15px;
     }
@@ -1020,9 +1080,10 @@ h1 span {
     }
 }
 
-/* =========================================================
+
+/* =========================
    SMALL PHONES
-========================================================= */
+========================= */
 
 @media (max-width: 400px) {
 
@@ -1064,34 +1125,26 @@ h1 span {
     }
 }
 
-/* =========================================================
-   ACCESSIBILITY
-========================================================= */
 
-button {
-    -webkit-tap-highlight-color: transparent;
-}
-
-button:focus-visible {
-    outline:
-        3px solid
-        rgba(255, 143, 197, 0.7);
-
-    outline-offset: 4px;
-}
-
-/* =========================================================
+/* =========================
    REDUCE MOTION
-========================================================= */
+========================= */
 
 @media (prefers-reduced-motion: reduce) {
 
     *,
     *::before,
     *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        scroll-behavior: auto !important;
-        transition-duration: 0.01ms !important;
+        animation-duration:
+            0.01ms !important;
+
+        animation-iteration-count:
+            1 !important;
+
+        scroll-behavior:
+            auto !important;
+
+        transition-duration:
+            0.01ms !important;
     }
 }
