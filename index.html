@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gửi Nguyễn Thị B 💌</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         BACKGROUND EFFECTS
+    ========================== -->
+
+    <div class="background-glow glow-1"></div>
+    <div class="background-glow glow-2"></div>
+
+    <div id="stars"></div>
+    <div id="hearts"></div>
+
+
+    <!-- =========================
+         MUSIC
+    ========================== -->
+
+    <audio id="bgMusic" loop>
+        <!--
+            Nếu muốn thêm nhạc:
+            1. Đặt file music.mp3 cùng thư mục.
+            2. Bỏ dấu # ở src bên dưới.
+        -->
+        <!-- <source src="music.mp3" type="audio/mpeg"> -->
+    </audio>
+
+
+    <!-- =========================
+         MUSIC BUTTON
+    ========================== -->
+
+    <button id="musicButton" class="music-button" aria-label="Bật hoặc tắt nhạc">
+        🎵
+    </button>
+
+
+    <!-- =========================
+         MAIN
+    ========================== -->
+
+    <main class="container">
+
+        <!-- =====================
+             INTRO
+        ====================== -->
+
+        <section id="intro" class="screen active">
+
+            <div class="intro-content">
+
+                <div class="small-heart">♡</div>
+
+                <p class="intro-small">
+                    Có một điều tớ muốn nói...
+                </p>
+
+                <h1>
+                    Gửi <span>Nguyễn Thị B</span>
+                </h1>
+
+                <p class="intro-description">
+                    Một bức thư nhỏ dành cho một người đặc biệt.
+                </p>
+
+                <div class="envelope-container">
+
+                    <div class="envelope">
+
+                        <div class="envelope-back"></div>
+
+                        <div class="letter-preview">
+                            💌
+                        </div>
+
+                        <div class="envelope-flap"></div>
+
+                        <div class="envelope-front"></div>
+
+                        <div class="heart-seal">
+                            ♥
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <button id="openLetter" class="main-button">
+                    <span>Mở thư</span>
+                    <span class="button-heart">♡</span>
+                </button>
+
+                <p class="hint">
+                    Chạm vào đây nhé...
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================
+             LETTER
+        ====================== -->
+
+        <section id="letterScreen" class="screen">
+
+            <div class="letter-wrapper">
+
+                <div class="letter-card">
+
+                    <div class="letter-decoration top-left">
+                        ✦
+                    </div>
+
+                    <div class="letter-decoration top-right">
+                        ✦
+                    </div>
+
+                    <div class="letter-header">
+
+                        <div class="header-heart">
+                            ♥
+                        </div>
+
+                        <p class="letter-label">
+                            MỘT LÁ THƯ NHỎ
+                        </p>
+
+                        <h2>
+                            Gửi Nguyễn Thị B
+                        </h2>
+
+                    </div>
+
+
+                    <div class="divider">
+                        <span>♡</span>
+                    </div>
+
+
+                    <!-- Nội dung thư -->
+
+                    <article id="letterContent" class="letter-content">
+
+                        <p>
+                            B à,
+                        </p>
+
+                        <p>
+                            Có lẽ đôi khi những điều quan trọng nhất lại là
+                            những điều khó nói thành lời nhất. Có rất nhiều
+                            thứ tớ muốn nói với cậu, nhưng nếu cứ để chúng
+                            ở trong đầu thì có lẽ chẳng bao giờ nói hết được.
+                            Vì vậy hôm nay tớ muốn viết tất cả chúng ra,
+                            thật chậm, thật chân thành.
+                        </p>
+
+                        <p>
+                            Trước hết, tớ muốn cảm ơn cậu.
+                        </p>
+
+                        <p>
+                            Cảm ơn cậu vì đã xuất hiện trong cuộc sống của tớ.
+                            Cảm ơn những cuộc trò chuyện, những lần cười cùng
+                            nhau, những khoảnh khắc tưởng như rất bình thường
+                            nhưng sau này có thể lại trở thành những kỷ niệm
+                            mà tớ nhớ rất lâu.
+                        </p>
+
+                        <p>
+                            Có những ngày mọi thứ chẳng được vui cho lắm,
+                            nhưng chỉ cần nhìn thấy một tin nhắn của cậu,
+                            một câu hỏi đơn giản như "hôm nay thế nào?",
+                            hay đôi khi chỉ là một câu nói rất bình thường,
+                            cũng đủ khiến một ngày của tớ trở nên nhẹ nhàng
+                            hơn rất nhiều.
+                        </p>
+
+                        <p>
+                            Tớ không biết tương lai sẽ như thế nào.
+                            Tớ cũng chẳng thể hứa rằng mọi thứ lúc nào
+                            cũng hoàn hảo. Con người mà, ai cũng có những
+                            lúc vụng về, có những ngày mệt mỏi, có những
+                            lúc không hiểu nhau và có những điều không
+                            thể đoán trước.
+                        </p>
+
+                        <p>
+                            Nhưng nếu có một điều tớ muốn giữ lại,
+                            thì đó là sự chân thành.
+                        </p>
+
+                        <p>
+                            Tớ mong rằng dù sau này chúng ta có trải qua
+                            bao nhiêu chuyện, cậu vẫn luôn nhớ rằng đã từng
+                            có một người thật lòng trân trọng cậu, trân trọng
+                            những điều nhỏ bé cậu làm, những câu chuyện cậu
+                            kể và cả những lúc cậu chẳng cần phải cố gắng
+                            trở thành một ai khác.
+                        </p>
+
+                        <p>
+                            Cậu không cần phải lúc nào cũng vui.
+                            Không cần phải lúc nào cũng mạnh mẽ.
+                            Không cần phải lúc nào cũng hoàn hảo.
+                        </p>
+
+                        <p>
+                            Nếu có những ngày cậu cảm thấy mệt,
+                            tớ chỉ mong cậu nhớ rằng cậu vẫn xứng đáng
+                            được yêu thương, được quan tâm và được đối xử
+                            thật dịu dàng.
+                        </p>
+
+                        <p>
+                            Tớ cũng mong cậu đừng bao giờ quên chăm sóc
+                            bản thân mình. Ăn uống đầy đủ, ngủ đủ giấc,
+                            đừng suy nghĩ quá nhiều về những chuyện không
+                            đáng, và nếu có chuyện gì khiến cậu buồn,
+                            hãy cho bản thân một chút thời gian.
+                        </p>
+
+                        <p>
+                            Cuộc sống phía trước còn rất dài.
+                            Cậu sẽ còn gặp rất nhiều người, trải qua rất
+                            nhiều chuyện, đạt được những điều mà hôm nay
+                            có thể cậu còn chưa tưởng tượng ra.
+                        </p>
+
+                        <p>
+                            Tớ hy vọng cậu sẽ luôn đủ dũng cảm để theo đuổi
+                            những điều mình thích, đủ kiên nhẫn để vượt qua
+                            những lúc khó khăn và đủ tin tưởng vào bản thân
+                            để biết rằng cậu có thể làm được nhiều hơn
+                            những gì cậu nghĩ.
+                        </p>
+
+                        <p>
+                            Nếu một ngày nào đó cậu đạt được một ước mơ,
+                            tớ hy vọng người đầu tiên cậu muốn kể sẽ là
+                            một người đang thật sự vui vì cậu.
+                        </p>
+
+                        <p>
+                            Nếu một ngày nào đó cậu thất bại,
+                            tớ cũng hy vọng cậu sẽ nhớ rằng thất bại
+                            không làm cậu trở nên kém giá trị hơn.
+                            Một lần vấp ngã không quyết định cả hành trình.
+                        </p>
+
+                        <p>
+                            Và nếu có những ngày cậu cảm thấy mình chẳng
+                            làm được gì cả, thì cũng không sao.
+                            Nghỉ một chút rồi bước tiếp.
+                            Không cần phải chạy nhanh hơn người khác.
+                            Chỉ cần mỗi ngày tiến thêm một chút là đủ rồi.
+                        </p>
+
+                        <p>
+                            Tớ không biết mình có thể trở thành người như
+                            thế nào trong cuộc sống của cậu, nhưng tớ biết
+                            rằng tớ muốn những điều tốt đẹp đến với cậu.
+                            Không phải chỉ hôm nay, mà là thật nhiều ngày
+                            về sau nữa.
+                        </p>
+
+                        <p>
+                            Tớ mong cậu có thật nhiều ngày vui,
+                            có những người thật lòng yêu quý cậu,
+                            có một cuộc sống mà mỗi khi nhìn lại,
+                            cậu có thể mỉm cười và nói rằng:
+                            "Ừ, mình đã sống một cuộc đời thật đáng."
+                        </p>
+
+                        <p>
+                            Và nếu có thể gửi đến cậu một lời chúc,
+                            tớ sẽ không chúc cậu một cuộc sống không có
+                            khó khăn, bởi vì có lẽ điều đó là không thể.
+                        </p>
+
+                        <p>
+                            Tớ chỉ chúc cậu luôn có đủ sức mạnh để bước qua
+                            những khó khăn ấy, đủ may mắn để gặp những người
+                            tốt, đủ bình yên để tận hưởng những điều nhỏ bé
+                            và đủ hạnh phúc để cảm thấy những gì mình đang
+                            có là thật đáng quý.
+                        </p>
+
+                        <p>
+                            Còn nếu hỏi điều tớ mong nhất...
+                        </p>
+
+                        <p>
+                            Có lẽ là mong cậu luôn được là chính mình.
+                        </p>
+
+                        <p>
+                            Không cần phải thay đổi chỉ để làm hài lòng
+                            người khác. Không cần phải cố gắng trở thành
+                            phiên bản mà ai đó mong muốn.
+                            Cậu của hiện tại đã là một người rất đặc biệt
+                            theo cách riêng của cậu rồi.
+                        </p>
+
+                        <p>
+                            Có thể lá thư này hơi dài.
+                            Có thể có những câu nghe hơi ngốc.
+                            Nhưng từng câu ở đây đều là những điều tớ
+                            thật sự muốn gửi đến cậu.
+                        </p>
+
+                        <p>
+                            Cảm ơn vì đã đọc đến tận đây.
+                        </p>
+
+                        <p>
+                            Cảm ơn vì đã xuất hiện.
+                            Cảm ơn vì đã trở thành một phần trong những
+                            câu chuyện và ký ức của tớ.
+                        </p>
+
+                        <p>
+                            Mong rằng những ngày phía trước của cậu
+                            sẽ luôn có thật nhiều ánh nắng,
+                            thật nhiều tiếng cười và thật nhiều điều
+                            khiến trái tim cậu cảm thấy ấm áp.
+                        </p>
+
+                        <p>
+                            Và dù hôm nay là một ngày bình thường hay
+                            một ngày đặc biệt, tớ vẫn muốn nói rằng:
+                        </p>
+
+                        <p class="special-line">
+                            Cậu là một người rất đáng quý. ❤️
+                        </p>
+
+                        <p>
+                            Mong cậu luôn vui.
+                            Mong cậu luôn bình an.
+                            Mong những điều tốt đẹp nhất sẽ tìm đến cậu.
+                        </p>
+
+                        <p>
+                            Và mong rằng khi cậu đọc lại lá thư này vào
+                            một ngày nào đó, cậu vẫn có thể mỉm cười.
+                        </p>
+
+                        <p class="signature-text">
+                            Thật lòng,<br>
+                            <strong>Nguyễn Văn A</strong>
+                        </p>
+
+                    </article>
+
+
+                    <div class="divider bottom-divider">
+                        <span>♥</span>
+                    </div>
+
+
+                    <!-- Lời chúc -->
+
+                    <div class="wish-box">
+
+                        <div class="wish-icon">
+                            ✨
+                        </div>
+
+                        <h3>
+                            Một lời chúc dành cho cậu
+                        </h3>
+
+                        <p>
+                            Chúc cậu luôn có một trái tim đủ ấm,
+                            một nụ cười đủ rạng rỡ và một cuộc sống
+                            đủ bình yên để mỗi ngày thức dậy đều có
+                            một lý do để mỉm cười.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Footer -->
+
+                    <div class="letter-footer">
+
+                        <div class="footer-hearts">
+                            ♡ ♥ ♡
+                        </div>
+
+                        <p>
+                            Gửi một chút yêu thương đến cậu.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================
+             END SCREEN
+        ====================== -->
+
+        <section id="endScreen" class="screen">
+
+            <div class="end-content">
+
+                <div class="big-heart">
+                    ♥
+                </div>
+
+                <h2>
+                    Cảm ơn cậu đã đọc ❤️
+                </h2>
+
+                <p>
+                    Hy vọng lá thư nhỏ này đã khiến cậu mỉm cười.
+                </p>
+
+                <p class="end-signature">
+                    — Nguyễn Văn A —
+                </p>
+
+                <button id="restartButton" class="main-button">
+                    Đọc lại từ đầu
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
