@@ -1,6 +1,13 @@
-/* =========================================
+/* =========================================================
+   LOVE LETTER — STYLE.CSS
+   Font tối ưu tiếng Việt / PC / Mobile
+========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+/* =========================================================
    RESET
-========================================= */
+========================================================= */
 
 * {
     margin: 0;
@@ -14,7 +21,10 @@ html {
 
 body {
     min-height: 100vh;
+    overflow-x: hidden;
+
     font-family:
+        "Be Vietnam Pro",
         "Segoe UI",
         Arial,
         sans-serif;
@@ -27,15 +37,17 @@ body {
             #090611 100%
         );
 
-    color: #fff;
+    color: #ffffff;
 
-    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    text-rendering: optimizeLegibility;
 }
 
-
-/* =========================================
-   BACKGROUND
-========================================= */
+/* =========================================================
+   BACKGROUND GLOW
+========================================================= */
 
 .background-glow {
     position: fixed;
@@ -68,10 +80,9 @@ body {
     bottom: -150px;
 }
 
-
-/* =========================================
+/* =========================================================
    STARS
-========================================= */
+========================================================= */
 
 #stars {
     position: fixed;
@@ -91,7 +102,7 @@ body {
 
     border-radius: 50%;
 
-    background: white;
+    background: #ffffff;
 
     opacity: 0.6;
 
@@ -113,10 +124,9 @@ body {
     }
 }
 
-
-/* =========================================
-   HEARTS
-========================================= */
+/* =========================================================
+   FLOATING HEARTS
+========================================================= */
 
 #hearts {
     position: fixed;
@@ -172,10 +182,9 @@ body {
     }
 }
 
-
-/* =========================================
-   CONTAINER
-========================================= */
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
 
 .container {
     position: relative;
@@ -185,10 +194,9 @@ body {
     width: 100%;
 }
 
-
-/* =========================================
-   SCREENS
-========================================= */
+/* =========================================================
+   SCREEN
+========================================================= */
 
 .screen {
     min-height: 100vh;
@@ -221,10 +229,9 @@ body {
     }
 }
 
-
-/* =========================================
+/* =========================================================
    INTRO
-========================================= */
+========================================================= */
 
 .intro-content {
     width: min(700px, 100%);
@@ -263,12 +270,16 @@ body {
     letter-spacing: 2px;
 
     margin-bottom: 10px;
+
+    font-weight: 500;
 }
 
 h1 {
     font-size: clamp(38px, 8vw, 70px);
 
     font-weight: 700;
+
+    line-height: 1.15;
 
     margin-bottom: 15px;
 }
@@ -293,13 +304,14 @@ h1 span {
 
     font-size: 17px;
 
+    line-height: 1.7;
+
     margin-bottom: 40px;
 }
 
-
-/* =========================================
+/* =========================================================
    ENVELOPE
-========================================= */
+========================================================= */
 
 .envelope-container {
     width: 260px;
@@ -350,34 +362,29 @@ h1 span {
     z-index: 1;
 }
 
-.envelope-front {
+.letter-preview {
     position: absolute;
 
-    left: 0;
-    right: 0;
-    bottom: 0;
+    width: 190px;
+    height: 120px;
 
-    height: 110px;
+    left: 35px;
+    top: 25px;
 
-    background:
-        linear-gradient(
-            135deg,
-            #ef4d8d,
-            #bd285f
-        );
+    background: #fff8fc;
 
-    clip-path:
-        polygon(
-            0 0,
-            50% 55%,
-            100% 0,
-            100% 100%,
-            0 100%
-        );
+    color: #d92f72;
 
-    border-radius: 0 0 10px 10px;
+    border-radius: 5px;
 
-    z-index: 4;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 45px;
+
+    z-index: 2;
 }
 
 .envelope-flap {
@@ -416,29 +423,35 @@ h1 span {
         rotateX(180deg);
 }
 
-.letter-preview {
+.envelope-front {
     position: absolute;
 
-    width: 190px;
-    height: 120px;
+    left: 0;
+    right: 0;
+    bottom: 0;
 
-    left: 35px;
-    top: 25px;
+    height: 110px;
 
-    background: #fff8fc;
+    background:
+        linear-gradient(
+            135deg,
+            #ef4d8d,
+            #bd285f
+        );
 
-    color: #d92f72;
+    clip-path:
+        polygon(
+            0 0,
+            50% 55%,
+            100% 0,
+            100% 100%,
+            0 100%
+        );
 
-    border-radius: 5px;
+    border-radius:
+        0 0 10px 10px;
 
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    font-size: 45px;
-
-    z-index: 2;
+    z-index: 4;
 }
 
 .heart-seal {
@@ -472,15 +485,15 @@ h1 span {
     font-size: 24px;
 
     box-shadow:
-        0 5px 20px rgba(255, 60, 140, 0.4);
+        0 5px 20px
+        rgba(255, 60, 140, 0.4);
 
     z-index: 6;
 }
 
-
-/* =========================================
+/* =========================================================
    BUTTON
-========================================= */
+========================================================= */
 
 .main-button {
     border: none;
@@ -498,6 +511,12 @@ h1 span {
 
     color: white;
 
+    font-family:
+        "Be Vietnam Pro",
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
     font-size: 16px;
 
     font-weight: 600;
@@ -505,7 +524,8 @@ h1 span {
     cursor: pointer;
 
     box-shadow:
-        0 10px 30px rgba(255, 71, 150, 0.3);
+        0 10px 30px
+        rgba(255, 71, 150, 0.3);
 
     transition:
         transform 0.25s ease,
@@ -513,14 +533,17 @@ h1 span {
 }
 
 .main-button:hover {
-    transform: translateY(-3px);
+    transform:
+        translateY(-3px);
 
     box-shadow:
-        0 15px 40px rgba(255, 71, 150, 0.5);
+        0 15px 40px
+        rgba(255, 71, 150, 0.5);
 }
 
 .main-button:active {
-    transform: scale(0.96);
+    transform:
+        scale(0.96);
 }
 
 .button-heart {
@@ -537,10 +560,9 @@ h1 span {
     font-size: 13px;
 }
 
-
-/* =========================================
-   MUSIC
-========================================= */
+/* =========================================================
+   MUSIC BUTTON
+========================================================= */
 
 .music-button {
     position: fixed;
@@ -551,7 +573,9 @@ h1 span {
     width: 45px;
     height: 45px;
 
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.15);
 
     border-radius: 50%;
 
@@ -574,10 +598,9 @@ h1 span {
     transform: scale(1.1);
 }
 
-
-/* =========================================
+/* =========================================================
    LETTER
-========================================= */
+========================================================= */
 
 .letter-wrapper {
     width: min(820px, 100%);
@@ -589,8 +612,8 @@ h1 span {
     background:
         linear-gradient(
             145deg,
-            rgba(255, 249, 252, 0.98),
-            rgba(255, 241, 248, 0.97)
+            rgba(255, 249, 252, 0.99),
+            rgba(255, 241, 248, 0.98)
         );
 
     color: #43283b;
@@ -602,7 +625,8 @@ h1 span {
         clamp(25px, 6vw, 65px);
 
     box-shadow:
-        0 30px 80px rgba(0, 0, 0, 0.45);
+        0 30px 80px
+        rgba(0, 0, 0, 0.45);
 
     overflow: hidden;
 }
@@ -615,17 +639,17 @@ h1 span {
     inset: 10px;
 
     border:
-        1px solid rgba(197, 73, 126, 0.18);
+        1px solid
+        rgba(197, 73, 126, 0.18);
 
     border-radius: 18px;
 
     pointer-events: none;
 }
 
-
-/* =========================================
+/* =========================================================
    DECORATION
-========================================= */
+========================================================= */
 
 .letter-decoration {
     position: absolute;
@@ -647,10 +671,9 @@ h1 span {
     right: 30px;
 }
 
-
-/* =========================================
-   HEADER
-========================================= */
+/* =========================================================
+   LETTER HEADER
+========================================================= */
 
 .letter-header {
     text-align: center;
@@ -676,23 +699,31 @@ h1 span {
     color: #b57a9b;
 
     margin-bottom: 8px;
+
+    font-weight: 600;
 }
 
 .letter-header h2 {
     font-family:
-        Georgia,
-        "Times New Roman",
-        serif;
+        "Playfair Display",
+        "Be Vietnam Pro",
+        "Segoe UI",
+        Arial,
+        sans-serif;
 
-    font-size: clamp(30px, 6vw, 45px);
+    font-size:
+        clamp(30px, 6vw, 45px);
+
+    font-weight: 700;
+
+    line-height: 1.25;
 
     color: #7b3159;
 }
 
-
-/* =========================================
+/* =========================================================
    DIVIDER
-========================================= */
+========================================================= */
 
 .divider {
     display: flex;
@@ -704,33 +735,30 @@ h1 span {
     margin: 30px 0;
 
     color: #db6c9d;
+
+    font-size: 18px;
 }
 
 .divider::before,
 .divider::after {
     content: "";
 
-    height: 1px;
-
     flex: 1;
+
+    height: 1px;
 
     background:
         linear-gradient(
             90deg,
             transparent,
-            #e6a6c3,
+            rgba(219, 108, 157, 0.45),
             transparent
         );
 }
 
-.divider span {
-    font-size: 18px;
-}
-
-
-/* =========================================
+/* =========================================================
    LETTER CONTENT
-========================================= */
+========================================================= */
 
 .letter-content {
     position: relative;
@@ -738,228 +766,332 @@ h1 span {
     z-index: 2;
 
     font-family:
-        Georgia,
-        "Times New Roman",
-        serif;
+        "Be Vietnam Pro",
+        "Segoe UI",
+        Arial,
+        sans-serif;
 
-    font-size: 18px;
+    font-size: 17px;
 
-    line-height: 1.9;
+    line-height: 1.95;
+
+    color: #4d3343;
 }
 
 .letter-content p {
-    margin-bottom: 22px;
+    margin-bottom: 20px;
+
+    text-align: left;
 }
 
-.special-line {
-    text-align: center;
-
-    font-size: 24px;
-
-    font-weight: 600;
-
-    color: #d53e7c;
-
-    margin:
-        35px 0 !important;
-}
-
-.signature-text {
-    margin-top: 35px;
-
-    text-align: right;
+.letter-content strong {
+    font-weight: 700;
 
     color: #7b3159;
 }
 
+.letter-content .special {
+    text-align: center;
 
-/* =========================================
+    color: #d53e7c;
+
+    font-size: 24px;
+
+    font-weight: 700;
+
+    line-height: 1.5;
+
+    margin:
+        28px 0;
+}
+
+/* =========================================================
+   SIGNATURE
+========================================================= */
+
+.signature {
+    margin-top: 30px;
+
+    text-align: right;
+
+    color: #7b3159;
+
+    line-height: 1.8;
+}
+
+.signature strong {
+    font-size: 18px;
+}
+
+/* =========================================================
    WISH BOX
-========================================= */
+========================================================= */
 
 .wish-box {
-    position: relative;
-
-    z-index: 2;
+    margin-top: 25px;
 
     padding: 25px;
 
-    margin-top: 20px;
-
     border-radius: 18px;
-
-    text-align: center;
 
     background:
         linear-gradient(
             135deg,
-            rgba(255, 220, 237, 0.8),
-            rgba(244, 220, 255, 0.8)
+            #ffdced,
+            #f4dcff
         );
 
-    border:
-        1px solid rgba(208, 101, 151, 0.18);
-}
-
-.wish-icon {
-    font-size: 28px;
-
-    margin-bottom: 8px;
-}
-
-.wish-box h3 {
-    color: #8b315e;
-
-    margin-bottom: 10px;
-}
-
-.wish-box p {
-    font-family:
-        Georgia,
-        "Times New Roman",
-        serif;
-
-    line-height: 1.7;
-
     color: #694457;
-}
-
-
-/* =========================================
-   FOOTER
-========================================= */
-
-.letter-footer {
-    position: relative;
-
-    z-index: 2;
 
     text-align: center;
 
-    margin-top: 30px;
+    line-height: 1.8;
+}
+
+.wish-box h3 {
+    margin-bottom: 8px;
+
+    color: #8b315e;
+
+    font-size: 19px;
+}
+
+.wish-box p {
+    margin: 0;
+}
+
+/* =========================================================
+   LETTER FOOTER
+========================================================= */
+
+.letter-footer {
+    text-align: center;
 
     color: #a36c89;
 
-    font-size: 13px;
+    margin-top: 25px;
+
+    font-size: 15px;
+
+    line-height: 1.8;
 }
 
-.footer-hearts {
-    font-size: 20px;
-
-    letter-spacing: 8px;
-
-    margin-bottom: 8px;
-
-    color: #dc5c93;
-}
-
-
-/* =========================================
+/* =========================================================
    END SCREEN
-========================================= */
+========================================================= */
 
 .end-content {
     text-align: center;
 
-    width: min(600px, 100%);
+    width: min(650px, 100%);
 }
 
-.big-heart {
+.end-heart {
     font-size: 100px;
 
     color: #ff5b9d;
 
-    text-shadow:
-        0 0 40px rgba(255, 70, 150, 0.6);
-
     animation:
-        heartPulse 1.5s infinite;
+        heartPulse 1.5s infinite ease-in-out;
 }
 
 .end-content h2 {
-    font-size: clamp(30px, 7vw, 50px);
+    font-size:
+        clamp(30px, 7vw, 50px);
 
-    margin: 20px 0 15px;
+    line-height: 1.25;
+
+    margin:
+        15px 0;
+
+    font-weight: 700;
 }
 
 .end-content p {
     color: #cbb6ca;
 
-    line-height: 1.7;
+    line-height: 1.8;
 
-    margin-bottom: 15px;
+    margin:
+        10px 0;
 }
 
-.end-signature {
-    color: #ff9dc6 !important;
-
-    margin-bottom: 30px !important;
-}
-
-
-/* =========================================
+/* =========================================================
    MOBILE
-========================================= */
+========================================================= */
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 
     .screen {
         padding:
-            30px 14px;
+            30px 15px;
+    }
+
+    .background-glow {
+        width: 280px;
+        height: 280px;
+
+        filter: blur(80px);
+    }
+
+    .intro-small {
+        font-size: 13px;
+
+        letter-spacing: 1.5px;
+    }
+
+    h1 {
+        font-size:
+            clamp(35px, 11vw, 55px);
     }
 
     .intro-description {
         font-size: 15px;
+
+        padding:
+            0 15px;
     }
 
     .envelope-container {
         transform:
-            scale(0.85);
-        margin-bottom: 25px;
+            scale(0.9);
     }
 
     .letter-card {
         padding:
-            40px 22px;
-        border-radius: 20px;
+            45px 20px;
     }
 
     .letter-card::before {
         inset: 7px;
     }
 
+    .letter-decoration {
+        font-size: 20px;
+    }
+
+    .top-left {
+        left: 17px;
+        top: 18px;
+    }
+
+    .top-right {
+        right: 17px;
+        top: 18px;
+    }
+
+    .letter-header h2 {
+        font-size:
+            clamp(28px, 9vw, 40px);
+    }
+
+    .letter-label {
+        font-size: 9px;
+
+        letter-spacing: 3px;
+    }
+
     .letter-content {
         font-size: 16px;
 
-        line-height: 1.8;
+        line-height: 1.9;
     }
 
     .letter-content p {
-        margin-bottom: 19px;
+        margin-bottom: 18px;
     }
 
-    .special-line {
+    .letter-content .special {
         font-size: 21px;
     }
 
     .wish-box {
-        padding: 20px 15px;
+        padding: 20px 16px;
+
+        font-size: 15px;
     }
 
     .music-button {
+        width: 42px;
+        height: 42px;
+
         right: 12px;
         top: 12px;
     }
 }
 
+/* =========================================================
+   SMALL PHONES
+========================================================= */
 
-/* =========================================
+@media (max-width: 400px) {
+
+    .screen {
+        padding:
+            25px 12px;
+    }
+
+    .envelope-container {
+        transform:
+            scale(0.82);
+    }
+
+    .main-button {
+        padding:
+            13px 25px;
+
+        font-size: 15px;
+    }
+
+    .letter-card {
+        padding:
+            40px 16px;
+    }
+
+    .letter-content {
+        font-size: 15px;
+
+        line-height: 1.85;
+    }
+
+    .letter-header h2 {
+        font-size: 27px;
+    }
+
+    .divider {
+        margin:
+            25px 0;
+    }
+}
+
+/* =========================================================
    ACCESSIBILITY
-========================================= */
+========================================================= */
+
+button {
+    -webkit-tap-highlight-color: transparent;
+}
 
 button:focus-visible {
     outline:
-        3px solid rgba(255, 143, 197, 0.8);
+        3px solid
+        rgba(255, 143, 197, 0.7);
 
     outline-offset: 4px;
+}
+
+/* =========================================================
+   REDUCE MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
 }
